@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: rgb(63, 132, 217);
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  border: 2px solid gray;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 450px;
+}
+
+h1 {
+  border-bottom: 2px solid lightgray;
+  border-width: 2px;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1rem 1.175rem;
+}
+
+.wrapper {
+  margin: 1.25rem 1.75rem;
+}
+.input-field {
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  height: 45px;
+  color: #000;
+  background: none;
+  font-size: 1.06rem;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  padding: 0 2.85rem 0 1rem;
+}
+i {
+  position: absolute;
+  right: 8px;
+  top: 14px;
+  font-size: 1.1rem;
+  color: #707070;
+}
+
+i:hover {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: darkgray;
+}
+
+.pass-indicator{
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background: #dfdfdf;
+  margin-top: 0.75rem;
+  border-radius: 25px;
+  
+}
+
+.pass-indicator::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  background-color: #f1c80b;
+}
+
+.pass-length{
+  margin: 1.56rem 0 1.25rem ;
+}
+
+.length-content{
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+}
+.pass-length input{
+  width: 100%;
+  height: 1.2rem;
+}
+
+.pass-setting{
+  color: #707070;
+}
+
+.lower-upper{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem ;
+  list-style: none;
+  color: #707070;
+}
+
+
+.lower-upper .option{
+  display: flex;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
+}
+
+.option input{
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+
+}
+
+
+.option label{
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  padding-left: 0.63rem;
+}
+
+button{
+  width: 100%;
+  padding: 0.94rem 0;
+  font-size: 1.06rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: #fff;
+  margin: 0.94rem 0 1.3rem;
+  border-color: lightgray;
+}

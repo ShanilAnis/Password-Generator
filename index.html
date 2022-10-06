@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1935d064dd.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <main class="box">
+            <div class="box-container">
+                <h1>Password Generator</h1>
+
+                <div class="wrapper">
+                    <div class="input-field">
+
+                        <input type="text" id="text" class="pass-generator" value="jsdfhjak" disabled>
+                        <i class="fas fa-solid fa-copy"></i>
+                    </div>
+                    <div class="pass-indicator"> </div>
+                    <div class="pass-length">
+                        <div class="length-content">
+                            <h3>Password Length</h3>
+                            <span class="digit">15</span>
+                        </div>
+                        <input type="range" name="password" id="password" class = "range-length" min="1" max="30" value="15"
+                            class="pass-range">
+                    </div>
+
+                    <div class="pass-setting">
+                        <h3>Password Settings</h3>
+                        <ul class="lower-upper">
+                            <li class="option">
+                                <label for="lowercase">
+                                    <input type="checkbox" name="lowercase" id="lowercase" class="lowercase">
+                                    LowerCase(a-z)
+                                </label>
+                            </li>
+                            <li class="option">
+                            <label for="uppercase">
+                                <input type="checkbox" name="uppercase" id="uppercase" class="uppercase">
+                                UpperCase(A-Z)
+                            </label>
+                            </li>
+                            <li class="option">
+                            <label for="numbers">
+
+                                <input type="checkbox" name="numbers" id="numbers" class="numbers">
+                                Numbers(0-9)
+                            </label>
+                            </li>
+                            <li class="option">
+                            <label for="Symbols">
+                                <input type="checkbox" name="Symbols" id="Symbols" class="symbols">
+                                Symbols(!-$^+)
+                            </label>
+                            </li>
+                            <li class="option">
+                            <label for="ex-dublicate">
+                                <input type="checkbox" name="ex-dublicate" id="ex-dublicate" class="ex-dublicate">
+                                Exclude Dublicate
+                            </label>
+                            </li>
+                            <li class="option">
+                                <label for="inc-spaces">
+                                    <input type="checkbox" name="inc-spaces" id="inc-spaces" class="inc-spaces">
+                                    Include Spaces
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="generate-password">Generate Password</button>
+
+        </main>
+    </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
