@@ -71,7 +71,7 @@ i:hover {
   
 }
 
-.pass-indicator::before{
+.pass-indicator-length{
   position: absolute;
   content: "";
   height: 100%;

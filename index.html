@@ -19,14 +19,16 @@
                 <div class="wrapper">
                     <div class="input-field">
 
-                        <input type="text" id="text" class="pass-generator" value="jsdfhjak" disabled>
-                        <i class="fas fa-solid fa-copy"></i>
+                        <input type="text" id="text" class="pass-generator" value=" " disabled>
+                        <i class="fas fa-solid fa-copy copy"></i>
                     </div>
-                    <div class="pass-indicator"> </div>
+                    <div class="pass-indicator"> 
+                        <div class="pass-indicator-length"></div>
+                    </div>
                     <div class="pass-length">
                         <div class="length-content">
                             <h3>Password Length</h3>
-                            <span class="digit">15</span>
+                            <span class="digit"></span>
                         </div>
                         <input type="range" name="password" id="password" class = "range-length" min="1" max="30" value="15"
                             class="pass-range">
@@ -55,8 +57,8 @@
                             </label>
                             </li>
                             <li class="option">
-                            <label for="Symbols">
-                                <input type="checkbox" name="Symbols" id="Symbols" class="symbols">
+                            <label for="symbols">
+                                <input type="checkbox" name="Symbols" id="symbols" class="symbols">
                                 Symbols(!-$^+)
                             </label>
                             </li>
